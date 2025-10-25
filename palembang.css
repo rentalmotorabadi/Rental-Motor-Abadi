@@ -305,3 +305,9 @@ footer {
     width: 80%;
   }
 }
+
+/* Fix khusus iPhone Safari */
+html, body {
+  -webkit-text-size-adjust: 100%; /* Cegah Safari memperbesar font */
+  overscroll-behavior: none;
+}
