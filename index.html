@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rental Motor Abadi</title>
+  <link rel="stylesheet" href="palembang.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <script src="palembang.js"></script>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">Rental Motor</div>
+      <ul>
+        <li><a href="#lokasi">Lokasi</a></li>
+        <li><a href="#unit-motor">Unit Motor</a></li>
+        <li><a href="#booking">Booking</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+        
+
+        
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1>Rental Motor Abadi</h1>
+      <p>Rental Murah Aman Dan Terpercaya</p>
+      <a href="#lokasi" class="btn">Lihat Lebih Lanjut</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="lokasi" class="section">
+      <div class="container">
+        <h2>Lokasi Rental</h2>
+        <p>Palembang.</p>
+    
+        <div class="maps">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10474.593967116716!2d104.73539686077198!3d-2.959749882254769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b75e8fc27a3e3%3A0x3039d80b220d0c0!2sPalembang%2C%20Kota%20Palembang%2C%20Sumatera%20Selatan!5e0!3m2!1sid!2sid!4v1759319418101!5m2!1sid!2sid" 
+            width="100%" height="300" style="border:0;" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="unit-motor" class="section bg-light">
+      <div class="container">
+        <h2>Unit Motor Tersedia</h2>
+        <div class="cards">
+          
+          <div class="card">
+            <img src="https://th.bing.com/th/id/R.bdee2626e4a142fdbc637b2dfbc28e01?rik=etrrKYrt2hjkAg&riu=http%3a%2f%2fwww.hongliyangzhi.com%2fmanufacturers%2fhonda%2fhonda-beat%2fhonda-beat-fi%2fhonda-beat-fi-1.jpg&ehk=yh%2fPjFfGj3MnxUrVtLPQT81QbFTj8xZXgFMasUaORfY%3d&risl=&pid=ImgRaw&r=0" alt="Honda Beat" />
+            <h3>Honda Beat</h3>
+            <p>Unit Tersedia: 7</p>
+            <button class="btn-sewa" onclick="bukaSewa('Honda Beat', 70000)">Sewa</button>
+          </div>
+    
+          <div class="card">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.kZWRO5o475EegRG56mkwVgHaEK?w=2000&h=1125&rs=1&pid=ImgDetMain&o=7&rm=3" alt="NMax" />
+            <h3>NMax</h3>
+            <p>Unit Tersedia: 3</p>
+            <button class="btn-sewa" onclick="bukaSewa('NMax', 120000)">Sewa</button>
+          </div>
+    
+          <div class="card">
+            <img src="https://www.kindpng.com/picc/m/680-6809146_car-honda-scoopy-png-transparent-png.png" alt="Scoopy" />
+            <h3>Scoopy</h3>
+            <p>Unit Tersedia: 5</p>
+            <button class="btn-sewa" onclick="bukaSewa('Scoopy', 80000)">Sewa</button>
+          </div>
+
+          <div class="card">
+            <img src="https://images.carandbike.com/cms/Yamaha_Aerox_155_Version_S_3_57357ee10a.jpg" alt="Aerox" />
+            <h3>Aerox</h3>
+            <p>Unit Tersedia: 4</p>
+            <button class="btn-sewa" onclick="bukaSewa('Aerox', 110000)">Sewa</button>
+          </div>
+    
+          <div class="card">
+            <img src="https://paultan.org/image/2024/09/2025-Honda-Vario-160-Malaysia-Blue-4-850x637.png" alt="Vario 150" />
+            <h3>Vario 150</h3>
+            <p>Unit Tersedia: 3</p>
+            <button class="btn-sewa" onclick="bukaSewa('Vario 150', 90000)">Sewa</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="booking" class="section bg-light">
+      <div class="container" style="text-align:center">
+        <h2>Form Booking</h2>
+        <p>Silakan isi form berikut untuk melakukan pemesanan.</p>
+        <a href="https://forms.gle/nKjUfGqWkguj1vZx6" 
+           class="btn" 
+           target="_blank">
+           Isi Form Booking
+        </a>
+      </div>
+    </section>
+    
+
+    <section id="kontak" class="section">
+      <div class="container">
+        <h2>Kontak</h2>
+    
+        
+        <p>📧 rentalmotorabadi1@gmail.com</p>
+        <p>📞 0821-7756-6395</p>
+    
+    
+        <a href="https://wa.me/6282177566395?text=Halo%20Mau%20Sewa%20Motor,Apakah%20Tersedia%3F" 
+           target="_blank" 
+           class="btn-wa">
+          💬 Chat via WhatsApp
+        </a>
+      </div>
+    </section>
+    
+    
+
+    
+  </main>
+<div id="modalSewa" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="tutupSewa()">&times;</span>
+    <h2 id="namaMotor"></h2>
+    <p>Harga per hari: Rp <span id="hargaMotor"></span></p>
+
+    <label for="hari">Jumlah Hari:</label>
+    <input type="number" id="hari" min="1" value="1" onchange="hitungTotal()" />
+
+    <p>Total Harga: Rp <span id="totalHarga"></span></p>
+
+    <a id="linkWA" href="#" target="_blank" class="btn-wa">Sewa via WhatsApp</a>
+    <button class="btn-sewa" onclick="lanjutBooking()">Booking via Form</button>
+
+  </div>
+</div>
+
+  <footer>
+    <p>&copy; 2025 Rental Motor Abadi .</p>
+  </footer>
+
+</body>
+</html>
